@@ -20,7 +20,7 @@ const centres = [
     address: "", // Address is part of the description
     image: ce2, // Use the imported image
     courses: [], // Not provided in the text
-    contact: "", // Not provided in the text
+    contact: "7598229292", // Not provided in the text
     description: "Established in March 2024, our inaugural branch is situated at 7TH CROSS STREET, THILLAI NAGAR. We pride ourselves on cultivating a student-friendly environment dedicated to delivering excellence in education. With a focus on personalized attention and top-tier instruction, our passionate team is committed to nurturing the academic and holistic growth of every individual. Our goal is to create a supportive and inspiring atmosphere where students are empowered to unleash their full potential through curiosity, critical thinking, and a love for learning. As we embark on this journey, we aspire to expand our impact and continue making a positive difference in the lives of students.",
     buttonText: "Call for admission",
     mapLink: "https://g.co/kgs/zbnvndz"
@@ -46,7 +46,7 @@ const centres = [
     address: "", // Address is part of the description
     image: ce3, // Use the imported image
     courses: [], // Not provided in the text
-    contact: "", // Not provided in the text
+    contact: "9150921490", // Not provided in the text
     description: "Established in November 2024, our Chengalpattu district (East Zone) branch is located at 13, Villa, Bscpl Bollineni Hillside Block-20c, Block, Bollineni Hillside Rd. Offering a dynamic and inclusive environment for learning. We focus on academic excellence and holistic development, providing personalized attention and high-quality instruction. Our approach fosters curiosity, critical thinking, and self-confidence, empowering students to reach their full potential. With a dedicated team committed to nurturing well-rounded individuals, we aim to inspire students to excel academically and contribute positively to their communities. Join us in transforming lives through education and building brighter futures!",
     buttonText: "Call for admission",
     mapLink: "https://g.co/kgs/gyqRZsE"
@@ -82,10 +82,10 @@ const centres = [
     code: "ISMLMD",
     name: "ISML- Madurai",
     location: "Madurai-Tamilnadu",
-    address: "9994234923", // Address is part of the description
+    address: "", // Address is part of the description
     image: ce7, // Use the imported image
     courses: [], // Not provided in the text
-    contact: "", // Not provided in the text
+    contact: "9994234923", // Not provided in the text
     description: "Established in May 2025, our learning centre is located at 205, Thomas Road, Ellis Nagar, Madurai, Tamil Nadu – 625016. The launch of this franchise brings an inspiring space for students to immerse themselves in the world of modern languages through interactive and culturally rich learning experiences. With a strong emphasis on practical communication and global awareness, our centre empowers learners to not only master new languages but also to appreciate the diverse cultures behind them. Led by experienced instructors and supported by a dynamic curriculum, students are well-positioned for both personal and professional success in today’s interconnected world.",
     buttonText: "Call for admission",
     mapLink: "https://share.google/61gMfQ9PHgv6CUOdK"
