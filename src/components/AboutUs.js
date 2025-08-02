@@ -623,7 +623,7 @@ function AboutUs() {
               <div className="team-member-image-container">
                 <img src={durkkas5} alt="Member 5 Name" className="team-member-image" />
               </div>
-              <h4 className="team-member-name">Bharathi</h4>
+              <h4 className="team-member-name">Bharathi Manoharan</h4>
               <p className="team-member-title">Technical Executive</p>
             </div>
           </div>
