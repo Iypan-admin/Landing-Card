@@ -30,13 +30,12 @@ import c21 from '../assets/c21.jpeg';
 import c22 from '../assets/c22.jpeg';
 import c23 from '../assets/c23.jpeg';
 import c24 from '../assets/c24.svg';
-import Email from '../assets/email.svg';
-import linkedin from '../assets/linkedin.svg';
+// import Email from '../assets/email.svg';
+// import linkedin from '../assets/linkedin.svg';
 import intern1 from '../assets/Intern1.png';
 import intern2 from '../assets/Intern2.png';
 import intern3 from '../assets/Intern3.png';
 import intern4 from '../assets/Intern4.png';
-
 import con1 from '../assets/Consultants/consultant1.png';
 import con2 from '../assets/Consultants/consultant2.png';
 import t1 from '../assets/trainers/t1.png';
@@ -57,6 +56,11 @@ import a4 from '../assets/admin/a4.png';
 import a5 from '../assets/admin/a5.png';
 
 
+import durkkas1 from '../assets/durkkas1.jpg';
+import durkkas2 from '../assets/Intern1.png';
+import durkkas3 from '../assets/durkkas3.jpg';
+import durkkas4 from '../assets/durkkas4.jpg';
+import durkkas5 from '../assets/durkkas5.jpg';
 
 
 
@@ -72,7 +76,7 @@ function AboutUs() {
   const carouselRef = useRef(null);
   const wrapperRef = useRef(null);
   const logosRef = useRef(null);
-  
+
   // Create 3 rows of 8 logos each
   const logos = [
     // Row 1
@@ -105,7 +109,7 @@ function AboutUs() {
     let interval;
     if (!isHovered) {
       interval = setInterval(() => {
-      setCurrentPosition((prev) => (prev + 1) % 8);
+        setCurrentPosition((prev) => (prev + 1) % 8);
       }, 2000);
     }
     return () => {
@@ -141,7 +145,7 @@ function AboutUs() {
   const handleTouchStart = (e) => {
     setIsDragging(true);
     setStartX(e.touches[0].clientX);
-        if (wrapperRef.current) {
+    if (wrapperRef.current) {
       const transform = window.getComputedStyle(wrapperRef.current).getPropertyValue('transform');
       const matrix = new DOMMatrix(transform);
       setScrollLeft(matrix.m41);
@@ -153,7 +157,7 @@ function AboutUs() {
     const x = e.touches[0].clientX;
     const walk = (x - startX);
     if (wrapperRef.current) {
-            wrapperRef.current.style.transition = 'none';
+      wrapperRef.current.style.transition = 'none';
       wrapperRef.current.style.transform = `translateX(${scrollLeft + walk}px)`;
     }
   };
@@ -165,7 +169,7 @@ function AboutUs() {
       const transform = window.getComputedStyle(wrapperRef.current).getPropertyValue('transform');
       const matrix = new DOMMatrix(transform);
       const currentX = matrix.m41;
-      
+
       if (Math.abs(currentX - scrollLeft) > slideWidth / 2) {
         const direction = currentX > scrollLeft ? -1 : 1;
         const newIndex = (currentImageIndex + direction + carouselImages.length) % carouselImages.length;
@@ -208,7 +212,7 @@ function AboutUs() {
       const transform = window.getComputedStyle(wrapperRef.current).getPropertyValue('transform');
       const matrix = new DOMMatrix(transform);
       const currentX = matrix.m41;
-      
+
       if (Math.abs(currentX - scrollLeft) > slideWidth / 2) {
         const direction = currentX > scrollLeft ? -1 : 1;
         const newIndex = (currentImageIndex + direction + carouselImages.length) % carouselImages.length;
@@ -256,17 +260,17 @@ function AboutUs() {
     // If there's a currently open section, close it first
     if (openTeamSection) {
       setOpenTeamSection(null);
-      
+
       // Wait for the closing animation to complete
       setTimeout(() => {
         // Open the new section
         setOpenTeamSection(section);
-        
+
         // Calculate scroll position after the new section is opened
         if (targetElement) {
           const elementPosition = targetElement.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-          
+
           // Scroll to the new position
           window.scrollTo({
             top: offsetPosition,
@@ -277,12 +281,12 @@ function AboutUs() {
     } else {
       // If no section is currently open, just open the new one
       setOpenTeamSection(section);
-      
+
       // Scroll to the new section
       if (targetElement) {
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        
+
         window.scrollTo({
           top: offsetPosition,
           behavior: 'smooth'
@@ -294,12 +298,12 @@ function AboutUs() {
   return (
     <div className="about-us-container">
       <h1 className="about-title">About Us</h1>
-      
+
       <div className="about-main-content">
         <div className="carousel-section">
-          <div 
+          <div
             className="carousel-container"
-              ref={carouselRef}
+            ref={carouselRef}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
@@ -308,7 +312,7 @@ function AboutUs() {
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
-            <div 
+            <div
               className="carousel-wrapper"
               ref={wrapperRef}
               style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
@@ -339,18 +343,18 @@ function AboutUs() {
           <div className="content-with-carousel">
             <div className="text-content">
               <p className="about-text">
-                Welcome to Indian School for Modern Languages - A registered trade mark of IYPAN Educational Centre PVT LTD, 
-                Established in 2014 under the name of Ocean Institute for French, later changed to IYPAN has been a pioneer 
-                in language education, enriching lives through quality language programs. Our journey is marked by a commitment 
-                to excellence, innovation in curriculum, and empowering learners of all ages with linguistic proficiency, 
+                Welcome to Indian School for Modern Languages - A registered trade mark of IYPAN Educational Centre PVT LTD,
+                Established in 2014 under the name of Ocean Institute for French, later changed to IYPAN has been a pioneer
+                in language education, enriching lives through quality language programs. Our journey is marked by a commitment
+                to excellence, innovation in curriculum, and empowering learners of all ages with linguistic proficiency,
                 cultural immersion, and global connectivity.
               </p>
             </div>
 
             <div className="text-content">
               <p className="about-text">
-                Since 2014, ISML has grown from teaching French to introducing German and Japanese in 2022. We've impacted 
-                20,000+ students through language workshops across India, involving parents, teachers, and students. Notably, 
+                Since 2014, ISML has grown from teaching French to introducing German and Japanese in 2022. We've impacted
+                20,000+ students through language workshops across India, involving parents, teachers, and students. Notably,
                 200+ students have achieved excellence, showcasing our commitment to comprehensive language education.
               </p>
             </div>
@@ -361,21 +365,21 @@ function AboutUs() {
       <section className="about-section">
         <h2 className="section-title">Our Clients</h2>
         <div className="client-logos-container">
-          <div 
+          <div
             className="client-logos-grid"
             ref={logosRef}
             style={{ transform: `translateX(-${currentPosition * (100 / 8)}%)` }}
           >
             {logos.map((logo, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="client-logo-wrapper"
                 onMouseEnter={handleLogoHover}
                 onMouseLeave={handleLogoUnhover}
               >
-                <img 
-                  src={logo} 
-                  alt={`Client Logo ${index + 1}`} 
+                <img
+                  src={logo}
+                  alt={`Client Logo ${index + 1}`}
                   className="client-logo"
                 />
               </div>
@@ -390,15 +394,15 @@ function AboutUs() {
             <section className="about-section vision-section">
               <h2 className="section-title">Our Vision</h2>
               <p className="about-text">
-                We envision a society where language barriers are overcome, facilitating seamless communication and 
+                We envision a society where language barriers are overcome, facilitating seamless communication and
                 interconnectedness among diverse communities.
               </p>
             </section>
-            
+
             <section className="about-section mission-section">
               <h2 className="section-title">Our Mission</h2>
               <p className="about-text">
-                Our mission is to empower individuals of all ages with the linguistic proficiency necessary to thrive 
+                Our mission is to empower individuals of all ages with the linguistic proficiency necessary to thrive
                 in a globalized world while fostering cross-cultural appreciation and understanding.
               </p>
             </section>
@@ -412,7 +416,7 @@ function AboutUs() {
 
         {/* Trainer Team */}
         <div id="trainer-team" className="team-subsection">
-          <button 
+          <button
             className="team-subsection-header"
             onClick={() => toggleTeamSection('trainer-team')}
           >
@@ -447,7 +451,7 @@ function AboutUs() {
 
         {/* Admin Team */}
         <div id="admin-team" className="team-subsection">
-          <button 
+          <button
             className="team-subsection-header"
             onClick={() => toggleTeamSection('admin-team')}
           >
@@ -492,7 +496,7 @@ function AboutUs() {
 
         {/* Consultants */}
         <div id="consultants" className="team-subsection">
-          <button 
+          <button
             className="team-subsection-header"
             onClick={() => toggleTeamSection('consultants')}
           >
@@ -521,7 +525,7 @@ function AboutUs() {
 
         {/* Interns */}
         <div id="interns" className="team-subsection">
-          <button 
+          <button
             className="team-subsection-header"
             onClick={() => toggleTeamSection('interns')}
           >
@@ -556,7 +560,7 @@ function AboutUs() {
               <h4 className="team-member-name">Mohammed Abdul Majeed</h4>
               <p className="team-member-title">Intern</p>
             </div>
-             {/* Dummy Intern 4 */}
+            {/* Dummy Intern 4 */}
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
@@ -567,22 +571,80 @@ function AboutUs() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Moved join-team-container here */}
-          <div className="join-team-container">
-            <div className="join-team-content">
-              <h2 className="join-team-title">Want to join our team?</h2>
-              <button 
-                className="join-team-button"
-                onClick={() => window.location.href = 'tel:+917338880780'}
-              >
-                Click here to join
-              </button>
+        {/* Durkkas Infotech Team */}
+        <div id="durkkas-team" className="team-subsection">
+          <button
+            className="team-subsection-header"
+            onClick={() => toggleTeamSection('durkkas-team')}
+          >
+            <h3 className="team-subsection-title">Master Franchise Team</h3>
+            <span className={`dropdown-arrow ${openTeamSection === 'durkkas-team' ? 'up' : ''}`}>▼</span>
+          </button>
+          <div className={`team-members-grid ${openTeamSection === 'durkkas-team' ? 'open' : ''}`}>
+            {/* Member 1 */}
+            <div className="team-member-card">
+              <div className="team-card-bg"></div>
+              <div className="team-member-image-container">
+                <img src={durkkas1} alt="Member 1 Name" className="team-member-image" />
+              </div>
+              <h4 className="team-member-name">Naveen Prasanth C</h4>
+              <p className="team-member-title">Project Director</p>
+            </div>
+            {/* Member 2 */}
+            <div className="team-member-card">
+              <div className="team-card-bg"></div>
+              <div className="team-member-image-container">
+                <img src={durkkas2} alt="Member 2 Name" className="team-member-image" />
+              </div>
+              <h4 className="team-member-name">Saravana Kumar P</h4>
+              <p className="team-member-title">Executive Manager</p>
+            </div>
+            {/* Member 3 */}
+            <div className="team-member-card">
+              <div className="team-card-bg"></div>
+              <div className="team-member-image-container">
+                <img src={durkkas3} alt="Member 3 Name" className="team-member-image" />
+              </div>
+              <h4 className="team-member-name">Rahmathullah S</h4>
+              <p className="team-member-title">Digital Marketing Executive</p>
+            </div>
+            {/* Member 4 */}
+            <div className="team-member-card">
+              <div className="team-card-bg"></div>
+              <div className="team-member-image-container">
+                <img src={durkkas4} alt="Member 4 Name" className="team-member-image" />
+              </div>
+              <h4 className="team-member-name">Manikandan V</h4>
+              <p className="team-member-title">Technical Executive</p>
+            </div>
+            {/* Member 5 */}
+            <div className="team-member-card">
+              <div className="team-card-bg"></div>
+              <div className="team-member-image-container">
+                <img src={durkkas5} alt="Member 5 Name" className="team-member-image" />
+              </div>
+              <h4 className="team-member-name">Bharathi</h4>
+              <p className="team-member-title">Technical Executive</p>
             </div>
           </div>
+        </div>
 
-    </div>
+      </section >
+
+      {/* Moved join-team-container here */}
+      < div className="join-team-container" >
+        <div className="join-team-content">
+          <h2 className="join-team-title">Want to join our team?</h2>
+          <button
+            className="join-team-button"
+            onClick={() => window.location.href = 'tel:+917338880780'}
+          >
+            Click here to join
+          </button>
+        </div>
+      </div >
+
+    </div >
   );
 }
 

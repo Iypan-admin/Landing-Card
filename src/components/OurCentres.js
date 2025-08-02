@@ -68,7 +68,7 @@ const centres = [
     id: 5,
     code: "ISMLAV",
     name: "ISML- Avinashi",
-    location: "Avinashi-Tamilnadu",
+    location: "Avinashi-Tamil Nadu",
     address: "", // Address is part of the description
     image: ce6, // Use the imported image
     courses: [], // Not provided in the text
@@ -81,7 +81,7 @@ const centres = [
     id: 6,
     code: "ISMLMD",
     name: "ISML- Madurai",
-    location: "Madurai-Tamilnadu",
+    location: "Madurai-Tamil Nadu",
     address: "", // Address is part of the description
     image: ce7, // Use the imported image
     courses: [], // Not provided in the text
@@ -94,7 +94,7 @@ const centres = [
     id: 7,
     code: "ISMLPL",
     name: "ISML- Pallavaram",
-    location: "Pallavaram-Tamilnadu",
+    location: "Pallavaram-Tamil Nadu",
     address: "", // Address is part of the description
     image: ce8, // Use the imported image
     courses: [], // Not provided in the text
@@ -107,7 +107,7 @@ const centres = [
     id: 8,
     code: "ISMLCP",
     name: "ISML- Chromepet",
-    location: "Chromepet-Tamilnadu",
+    location: "Chromepet-Tamil Nadu",
     address: "", // Address is part of the description
     image: ce9, // Use the imported image
     courses: [], // Not provided in the text
@@ -120,7 +120,7 @@ const centres = [
     id: 9,
     code: "ISMLPO",
     name: "ISML- Pollachi",
-    location: "Pollachi-Tamilnadu",
+    location: "Pollachi-Tamil Nadu",
     address: "", // Address is part of the description
     image: ce10, // Use the imported image
     courses: [], // Not provided in the text
