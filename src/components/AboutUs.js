@@ -57,7 +57,7 @@ import a5 from '../assets/admin/a5.png';
 
 
 import durkkas1 from '../assets/durkkas1.jpg';
-import durkkas2 from '../assets/Intern1.png';
+import durkkas2 from '../assets/durkkas2.jpg';
 import durkkas3 from '../assets/durkkas3.jpg';
 import durkkas4 from '../assets/durkkas4.jpg';
 import durkkas5 from '../assets/durkkas5.jpg';
@@ -425,7 +425,7 @@ function AboutUs() {
           </button>
           <div className={`team-members-grid ${openTeamSection === 'trainer-team' ? 'open' : ''}`}>
             {[
-              { name: "Pradeep kumar M", title: "French Language Trainer", image: a1 },
+              { name: "Pradeep kumar M", title: "Founder", image: a1 },
               { name: "Popodoum Noe", title: "French Language Trainer", image: t1 },
               { name: "Vyshnavi M", title: "French Language Trainer", image: t5 },
               { name: "Revanth S", title: "Japanese Language Trainer", image: t2 },
@@ -615,7 +615,7 @@ function AboutUs() {
                 <img src={durkkas4} alt="Member 4 Name" className="team-member-image" />
               </div>
               <h4 className="team-member-name">Manikandan V</h4>
-              <p className="team-member-title">Technical Executive</p>
+              <p className="team-member-title">Technical Associate</p>
             </div>
             {/* Member 5 */}
             <div className="team-member-card">
@@ -624,7 +624,7 @@ function AboutUs() {
                 <img src={durkkas5} alt="Member 5 Name" className="team-member-image" />
               </div>
               <h4 className="team-member-name">Bharathi Manoharan</h4>
-              <p className="team-member-title">Technical Executive</p>
+              <p className="team-member-title">Technical Associate</p>
             </div>
           </div>
         </div>
