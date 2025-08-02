@@ -368,7 +368,7 @@ function OurCentres() {
             >
               <button
                 className="isml-program-btn"
-                onClick={() => window.location.href = 'tel:+919385496915'}
+                onClick={() => window.location.href = 'tel:+919385496914'}
               >
                 Call for Enquiry
               </button>
