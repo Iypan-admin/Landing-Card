@@ -397,6 +397,79 @@ function EliteCard() {
             </div>
           </div>
         </section>
+        {/* Additional Benefits */}
+        <section className="section">
+          <div className="section-card">
+            <h2 className="section-title">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" style={{ marginRight: '12px' }}>
+                <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" stroke="#6366f1" strokeWidth="2" />
+              </svg>
+              Additional Benefits
+            </h2>
+            <p className="section-subtitle">Compare extra perks offered in each pass</p>
+
+            <div className="discount-table-container">
+              <table className="discount-table">
+                <thead>
+                  <tr>
+                    <th>Benefits</th>
+                    <th>
+                      EduPass<br />
+                      <span className="price">₹199</span>
+                    </th>
+                    <th>
+                      ScholarPass<br />
+                      <span className="price">₹499</span>
+                    </th>
+                    <th>
+                      InfinityPass<br />
+                      <span className="price">₹999</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Online Access</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                  </tr>
+                  <tr>
+                    <td>Offline Access</td>
+                    <td className="not-available">✗</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                  </tr>
+                  <tr>
+                    <td>Study Abroad Guidance</td>
+                    <td className="not-available">✗</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                  </tr>
+                  <tr>
+                    <td>Internship</td>
+                    <td className="not-available">✗</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                  </tr>
+                  <tr>
+                    <td>Exam Prep</td>
+                    <td className="not-available">✗</td>
+                    <td className="not-available">✗</td>
+                    <td>✅</td>
+                  </tr>
+                  <tr>
+                    <td>Placement Guidence</td>
+                    <td className="not-available">✗</td>
+                    <td className="not-available">✗</td>
+                    <td>✅</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
 
         {/* Exclusive Member Benefits */}
         <section className="section">

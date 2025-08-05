@@ -197,7 +197,7 @@ function CourseDetails() {
       languages: { French: "A1 to A2", German: "A1 to A2" },
       schedule: {
         days: "Monday to Friday",
-        duration: "2 - 3 hours",  
+        duration: "2 - 3 hours",
         timeRange: "7:00 AM to 10:00 PM IST"
       },
       features: [
@@ -208,7 +208,7 @@ function CourseDetails() {
       ],
       category: "intensive"
     }
-    
+
   ], []);
 
   // --- Filter state and filtered courses ---
@@ -217,18 +217,18 @@ function CourseDetails() {
   const filteredCourses = useMemo(() => {
     switch (activeFilter) {
       case "regular":
-        return allCourses.filter(course => 
-          course.title === "Master a Language - ML" || 
-          course.title === "Immersion - IMM" || 
+        return allCourses.filter(course =>
+          course.title === "Master a Language - ML" ||
+          course.title === "Immersion - IMM" ||
           course.title === "International Diploma - ID"
         );
       case "exam":
-        return allCourses.filter(course => 
-          course.title === "Immersion - IMM Fasttrack" || 
+        return allCourses.filter(course =>
+          course.title === "Immersion - IMM Fasttrack" ||
           course.title === "International Diploma - ID Fasttrack"
         );
       case "intensive":
-        return allCourses.filter(course => 
+        return allCourses.filter(course =>
           course.title === "Master a Language - ML"
         );
       default:
@@ -538,9 +538,9 @@ function CourseDetails() {
                 <div className="enrollment-card">
                   <h3>Ready to Start?</h3>
                   <div className="price-display">{course.price}</div>
-                  <button 
+                  <button
                     className="enroll-btn"
-                    onClick={() => window.location.href = 'tel:+917338881781'}
+                    onClick={() => window.open('https://studentportal.iypan.com', '_blank')}
                   >
                     Enroll Now
                   </button>
@@ -548,6 +548,7 @@ function CourseDetails() {
                     Get started with a free consultation
                   </p>
                 </div>
+
 
                 <div className="contact-card">
                   <h4>Need Help?</h4>
@@ -580,13 +581,13 @@ function CourseDetails() {
               careers with ISML
             </p>
             <div className="cta-buttons">
-              <button 
+              <button
                 className="cta-primary"
                 onClick={() => window.open('https://studentportal.iypan.com/login', '_blank')}
               >
                 Student Portal
               </button>
-              <button 
+              <button
                 className="cta-secondary"
                 onClick={() => {
                   const link = document.createElement('a');
