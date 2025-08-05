@@ -740,6 +740,10 @@ function EliteCard() {
                   </>
                 }
               />
+              <FAQItem
+                question="When can I use card benefits?"
+                answer="Card benefits, including discounts, are only applicable at the start of a new batch or course. They cannot be used for ongoing batches or courses."
+              />
             </div>
           </div>
         </section>

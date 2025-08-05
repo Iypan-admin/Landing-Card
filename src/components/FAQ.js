@@ -102,9 +102,9 @@ function FAQ() {
               <span>{faq.question}</span>
               <span className={`faq-toggle-icon${openIdx === idx ? ' open' : ''}`} aria-label={openIdx === idx ? 'Collapse' : 'Expand'}>
                 {openIdx === idx ? (
-                  <svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="13" fill="#1a237e"/><rect x="8" y="13" width="12" height="2" rx="1" fill="#fff"/></svg>
+                  <svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="13" fill="#1a237e" /><rect x="8" y="13" width="12" height="2" rx="1" fill="#fff" /></svg>
                 ) : (
-                  <svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="13" fill="#1a237e"/><rect x="8" y="13" width="12" height="2" rx="1" fill="#fff"/><rect x="13" y="8" width="2" height="12" rx="1" fill="#fff"/></svg>
+                  <svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="13" fill="#1a237e" /><rect x="8" y="13" width="12" height="2" rx="1" fill="#fff" /><rect x="13" y="8" width="2" height="12" rx="1" fill="#fff" /></svg>
                 )}
               </span>
             </button>
