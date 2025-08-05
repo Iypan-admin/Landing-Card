@@ -91,6 +91,12 @@ function EliteCard() {
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                       <path d="M20 6L9 17L4 12" stroke="#10b981" strokeWidth="2" />
                     </svg>
+                    Benefits Worth ₹1,250+
+                  </div>
+                  <div className="plan-feature">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                      <path d="M20 6L9 17L4 12" stroke="#10b981" strokeWidth="2" />
+                    </svg>
                     1 Year Validity
                   </div>
                   <div className="plan-feature">
@@ -144,6 +150,12 @@ function EliteCard() {
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                       <path d="M20 6L9 17L4 12" stroke="white" strokeWidth="2" />
                     </svg>
+                    Benefits Worth ₹31,740+
+                  </div>
+                  <div className="plan-feature">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                      <path d="M20 6L9 17L4 12" stroke="white" strokeWidth="2" />
+                    </svg>
                     2 Years Validity
                   </div>
                   <div className="plan-feature">
@@ -193,6 +205,12 @@ function EliteCard() {
                 </div>
 
                 <div className="plan-features">
+                  <div className="plan-feature">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                      <path d="M20 6L9 17L4 12" stroke="#10b981" strokeWidth="2" />
+                    </svg>
+                    Benefits Worth ₹59,700+
+                  </div>
                   <div className="plan-feature">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                       <path d="M20 6L9 17L4 12" stroke="#10b981" strokeWidth="2" />

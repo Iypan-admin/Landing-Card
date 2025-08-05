@@ -42,7 +42,7 @@ function AppContent() {
     if (location.pathname === '/') {
       setHeroOutOfView(false);
       window.scrollTo(0, 0);
-      
+
       // Re-initialize the observer when returning to home
       if (heroRef.current && observerRef.current) {
         observerRef.current.disconnect();
@@ -59,14 +59,14 @@ function AppContent() {
 
   useEffect(() => {
     if (!heroRef.current) return;
-    
+
     observerRef.current = new window.IntersectionObserver(
       ([entry]) => {
         setHeroOutOfView(!entry.isIntersecting && entry.boundingClientRect.top < 0);
       },
       { threshold: 0, rootMargin: '-1px 0px 0px 0px' }
     );
-    
+
     observerRef.current.observe(heroRef.current);
     return () => {
       if (observerRef.current) {
@@ -124,8 +124,8 @@ function AppContent() {
                 <h3>Quick Links</h3>
                 <a href="about">About Us</a>
                 <a href="centres">Our Centres</a>
-                <a href="elite-card">Elite Card</a>
-                
+                <a href="elite-card">Elite Membership</a>
+
               </div>
               <div className="vertical-line vertical-line-1"></div>
               <div className="footer-links-column">
@@ -140,14 +140,14 @@ function AppContent() {
                 <a href="french">French</a>
                 <a href="german">German</a>
                 <a href="japanese">Japanese</a>
-        </div>
-          </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="isml-footer-copyright">&copy; 2025 IYPAN Educational Centre Private Limited- All Rights Reserved.</div>
       </footer>
-      <button 
-        className="phone-call-btn" 
+      <button
+        className="phone-call-btn"
         onClick={() => window.location.href = 'tel:+917338881781'}
         aria-label="Call us"
       >
