@@ -728,6 +728,10 @@ function EliteCard() {
                 answer="ISML Elite offers discounts on diploma courses and free access to study abroad guidance (ScholarPass and InfinityPass only), helping students prepare affordably and confidently."
               />
               <FAQItem
+                question="When can I use card benefits?"
+                answer="Card benefits, including discounts, are only applicable at the start of a new batch or course. They cannot be used for ongoing batches or courses."
+              />
+              <FAQItem
                 question="Can ISML change the membership benefits or terms later?"
                 answer={
                   <>Yes. ISML may update the membership benefits, pricing, or terms from time to time.
@@ -739,10 +743,6 @@ function EliteCard() {
                     </ul>
                   </>
                 }
-              />
-              <FAQItem
-                question="When can I use card benefits?"
-                answer="Card benefits, including discounts, are only applicable at the start of a new batch or course. They cannot be used for ongoing batches or courses."
               />
             </div>
           </div>
