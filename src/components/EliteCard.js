@@ -80,7 +80,7 @@ function EliteCard() {
               <div className="plan-content">
                 <div className="plan-header">
                   <h2 className="plans-name">ISML Elite EduPass</h2>
-                  <h3 className="plan-price">₹49</h3><p className="plan-original">(Limited Time Offer 18th Aug 2025)</p>
+                  <h3 className="plan-price">₹49</h3><p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p>
                   <div className="plan-details">
                     <h3 className="plan-price">₹199</h3><p className="plan-original">(From 19th Aug 2025 onwards)</p>
                   </div>
@@ -139,7 +139,7 @@ function EliteCard() {
               <div className="plan-content">
                 <div className="plan-header">
                   <h4 className="plan-name">ISML Elite ScholarPass</h4>
-                  <h3 className="plan-price">₹99</h3><p className="plan-original">(Limited Time Offer 18th Aug 2025)</p>
+                  <h3 className="plan-price">₹99</h3><p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p>
                   <div className="plan-details">
                     <h3 className="plan-price">₹499</h3><p className="plan-original">(From 19th Aug 2025 onwards)</p>
                   </div>
@@ -198,7 +198,7 @@ function EliteCard() {
               <div className="plan-content">
                 <div className="plan-header">
                   <h4 className="plan-name">ISML Elite InfinityPass</h4>
-                  <h3 className="plan-price">₹199</h3><p className="plan-original">(Limited Time Offer 18th Aug 2025)</p>
+                  <h3 className="plan-price">₹199</h3><p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p>
                   <div className="plan-details">
                     <h3 className="plan-price">₹999</h3><p className="plan-original">(From 19th Aug 2025 onwards)</p>
                   </div>
