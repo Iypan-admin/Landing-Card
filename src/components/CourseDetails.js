@@ -540,7 +540,7 @@ function CourseDetails() {
                   <div className="price-display">{course.price}</div>
                   <button
                     className="enroll-btn"
-                    onClick={() => window.open('https://studentportal.iypan.com', '_blank')}
+                    onClick={() => window.open('https://zfrmz.in/V97bJsosDw3udTYMI3lx', '_blank')}
                   >
                     Enroll Now
                   </button>
@@ -583,7 +583,7 @@ function CourseDetails() {
             <div className="cta-buttons">
               <button
                 className="cta-primary"
-                onClick={() => window.open('https://studentportal.iypan.com/login', '_blank')}
+                onClick={() => window.open('https://zfrmz.in/V97bJsosDw3udTYMI3lx', '_blank')}
               >
                 Student Portal
               </button>
