@@ -64,14 +64,36 @@ function EliteCard() {
       <div className="main-content">
         {/* Choose Your Elite Plan */}
         <section className="section">
-          <div className="section-header">
-            <h2 className="section-title">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" style={{ marginRight: '12px' }}>
-                <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" stroke="#6366f1" strokeWidth="2" />
-              </svg>
-              Choose Your Elite Plan
-            </h2>
-            <p className="section-subtitle">Flexible options designed for every learning goal</p>
+          <div className="section-header flex items-center justify-between flex-wrap">
+            {/* Left Section - Title */}
+            <div className="flex items-center">
+              <h2 className="section-title flex items-center text-xl font-semibold text-gray-800">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  style={{ marginRight: '12px' }}
+                >
+                  <path
+                    d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z"
+                    stroke="#6366f1"
+                    strokeWidth="2"
+                  />
+                </svg>
+                Choose Your Elite Plan
+              </h2>
+              <p className="section-subtitle ml-4 text-sm text-gray-500">
+                Flexible options designed for every learning goal
+              </p>
+            </div>
+
+            {/* Right Section - Contact */}
+            <div className="text-right mt-2 sm:mt-0 font-serif">
+              <p className="text-sm font-medium text-indigo-600">
+                For more details: 📞 <span className="font-semibold">+91 9385457322</span>
+              </p>
+            </div>
           </div>
 
           <div className="plans-grid">
