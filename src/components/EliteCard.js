@@ -758,13 +758,13 @@ function EliteCard() {
                 answer={
                   <>
                     <ul>
-                      <li>ML (Mater a Language): 6–15 students , perfect for community learning, peer interaction, and group activities.
+                      <li>ML (Mater a Language): 6-15 students , perfect for community learning, peer interaction, and group activities.
                       </li>
-                      <li>ID (International Diploma) : 5–10 students , focused learning with balanced personal attention.
+                      <li>ID (International Diploma) : 5-10 students , focused learning with balanced personal attention.
                       </li>
-                      <li>Fast Track: 3–6 students, premium accelerated learning with close mentorship.
+                      <li>Fast Track: 3-6 students, premium accelerated learning with close mentorship.
                       </li>
-                      <li>IMM (Immersion): 3–6 students, high-intensity, personalised coaching for rapid results.
+                      <li>IMM (Immersion): 3-6 students, high-intensity, personalised coaching for rapid results.
                       </li>
                     </ul>
                   </>
