@@ -57,7 +57,7 @@ function EliteCard() {
             </svg>
             ISML Elite Membership
           </h1>
-          <p className="hero-subtitle2">(Limited-Time Offer : open from Aug 01 - Oct 15, 2025 only)</p>
+          <p className="hero-subtitle2">(Exclusive Enrollment Window: August 1 - October 15, 2025 only)</p>
           <p className="hero-subtitle">Empowering Learners - Unlock the Future of Language Learning</p>
         </div>
       </div>
