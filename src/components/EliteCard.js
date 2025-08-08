@@ -754,6 +754,23 @@ function EliteCard() {
                 answer="Card benefits, including discounts, are only applicable at the start of a new batch or course. They cannot be used for ongoing batches or courses."
               />
               <FAQItem
+                question="What is the batch size for each program?"
+                answer={
+                  <>
+                    <ul>
+                      <li>ML (Mater a Language): 6–15 students , perfect for community learning, peer interaction, and group activities.
+                      </li>
+                      <li>ID (International Diploma) : 5–10 students , focused learning with balanced personal attention.
+                      </li>
+                      <li>Fast Track: 3–6 students, premium accelerated learning with close mentorship.
+                      </li>
+                      <li>IMM (Immersion): 3–6 students, high-intensity, personalised coaching for rapid results.
+                      </li>
+                    </ul>
+                  </>
+                }
+              />
+              <FAQItem
                 question="Can ISML change the membership benefits or terms later?"
                 answer={
                   <>Yes. ISML may update the membership benefits, pricing, or terms from time to time.
