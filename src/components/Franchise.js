@@ -12,7 +12,7 @@ const CountUp = ({ end, duration = 2 }) => {
     const animate = (currentTime) => {
       if (!startTime) startTime = currentTime;
       const progress = Math.min((currentTime - startTime) / (duration * 1000), 1);
-      
+
       setCount(Math.floor(progress * end));
 
       if (progress < 1) {
@@ -37,13 +37,13 @@ const Franchise = () => {
     <AnimatePresence>
       <div className="franchise-container">
         <div className="franchise-content">
-          <motion.div 
+          <motion.div
             className="franchise-left"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <motion.div 
+            <motion.div
               className="franchise-logo"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -51,8 +51,8 @@ const Franchise = () => {
             >
               <span className="logo-text">Indian School for Modern Languages</span>
             </motion.div>
-            
-            <motion.h1 
+
+            <motion.h1
               className="franchise-title"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ const Franchise = () => {
               Join the ISML Synergy Franchise Model – Transform Language Learning Across India!
             </motion.h1>
 
-            <motion.p 
+            <motion.p
               className="franchise-subtitle"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -70,7 +70,7 @@ const Franchise = () => {
               Looking for a future-ready and profitable education business? The ISML Synergy Franchise Model is designed to create a powerful network of language centers across Tier 1, 2, and 3 cities in India. Flexible, scalable, and high-revenue – this model ensures success for every franchise partner!
             </motion.p>
 
-            <motion.div 
+            <motion.div
               className="franchise-stats"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -90,15 +90,15 @@ const Franchise = () => {
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="franchise-benefits"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 0.8 }}
             >
               <h2>Why Choose the ISML Synergy Model?</h2>
-              
-              <motion.div 
+
+              <motion.div
                 className="benefit-section"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
@@ -110,7 +110,7 @@ const Franchise = () => {
                 </ul>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 className="benefit-section"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
@@ -122,7 +122,7 @@ const Franchise = () => {
                 </ul>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 className="benefit-section"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
@@ -134,7 +134,7 @@ const Franchise = () => {
                 </ul>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 className="benefit-section"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
@@ -146,7 +146,7 @@ const Franchise = () => {
                 </ul>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 className="benefit-section"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
@@ -161,7 +161,7 @@ const Franchise = () => {
               </motion.div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="franchise-cta-section"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -174,8 +174,8 @@ const Franchise = () => {
                 <li>Onboarding: Receive training and support</li>
                 <li>Launch & Grow: Start enrolling students</li>
               </ol>
-              <motion.a 
-                href="tel:7338880780" 
+              <motion.a
+                href="tel:9385496914"
                 className="franchise-cta"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -184,21 +184,21 @@ const Franchise = () => {
               </motion.a>
             </motion.div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="franchise-right"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <motion.div 
+            <motion.div
               className="franchise-hero"
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
               <h2>Indian School for Modern Languages</h2>
               <p>Empowering India with Language Education</p>
-              
+
               <div className="demand-section">
                 <h3>Why Now? Growing Demand for Language Education!</h3>
                 <ul>

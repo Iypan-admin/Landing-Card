@@ -55,12 +55,12 @@ function EliteCard() {
               <path d="M3 17L12 22L21 17" fill="#fbbf24" />
               <path d="M3 12L12 17L21 12" fill="#fbbf24" />
             </svg>
-            ISML Elite
+            ISML Elite Membership
           </h1>
+          <p className="hero-subtitle2">(Limited-Time Offer : open from Aug 01 - Oct 15, 2025 only)</p>
           <p className="hero-subtitle">Empowering Learners - Unlock the Future of Language Learning</p>
         </div>
       </div>
-
       <div className="main-content">
         {/* Choose Your Elite Plan */}
         <section className="section">
