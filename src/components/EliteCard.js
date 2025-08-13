@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './EliteCard.css';
+import m1 from '../assets/9999.png';
+import rs2 from '../assets/1999.png';
+import rs3 from '../assets/499.png';
 
 function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -105,7 +108,7 @@ function EliteCard() {
                   <h3 className="plan-price">₹49</h3>
                   <p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p>
                   <div className="plan-details">
-                    <h3 className="plan-price">₹199</h3>
+                    <img src={rs2}></img>
                     <p className="plan-original">(From 19th Aug 2025 onwards)</p>
                   </div>
                 </div>
@@ -166,7 +169,7 @@ function EliteCard() {
                   <h4 className="plan-name">ISML Elite ScholarPass</h4>
                   <h3 className="plan-price">₹99</h3><p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p>
                   <div className="plan-details">
-                    <h3 className="plan-price">₹499</h3><p className="plan-original">(From 19th Aug 2025 onwards)</p>
+                    <img src={rs3}></img><p className="plan-original">(From 19th Aug 2025 onwards)</p>
                   </div>
                 </div>
 
@@ -225,7 +228,7 @@ function EliteCard() {
                   <h4 className="plan-name">ISML Elite InfinityPass</h4>
                   <h3 className="plan-price">₹199</h3><p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p>
                   <div className="plan-details">
-                    <h3 className="plan-price">₹999</h3><p className="plan-original">(From 19th Aug 2025 onwards)</p>
+                    <img src={m1}></img><p className="plan-original">(From 19th Aug 2025 onwards)</p>
                   </div>
                 </div>
 
