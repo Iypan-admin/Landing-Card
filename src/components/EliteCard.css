@@ -234,12 +234,24 @@
   font-weight: 800;
   color: #1a237e;
   margin-bottom: 0.5rem;
+  text-decoration: none; /* normal prices not crossed */
 }
 
+.elite-page .plan-details .plan-price {
+  text-decoration: line-through;
+  color: #1a237e; /* dark crossed price */
+  font-weight: 800;
+}
+.elite-page .plan-popular .plan-details .plan-price {
+  color: white; /* price text white */
+  text-decoration-line: line-through; /* apply line-through */
+  text-decoration-color: #1a237e; /* color of the line */
+  text-decoration-thickness: 4px; /* thickness of the line */
+  text-decoration-style: solid; /* solid line */
+}
 .elite-page .plan-popular .plan-price {
   color: white;
 }
-
 .elite-page .plan-name {
   font-size: 1.5rem;
   font-weight: 600;

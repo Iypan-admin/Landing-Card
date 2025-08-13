@@ -102,11 +102,14 @@ function EliteCard() {
               <div className="plan-content">
                 <div className="plan-header">
                   <h2 className="plans-name">ISML Elite EduPass</h2>
-                  <h3 className="plan-price">₹49</h3><p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p>
+                  <h3 className="plan-price">₹49</h3>
+                  <p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p>
                   <div className="plan-details">
-                    <h3 className="plan-price">₹199</h3><p className="plan-original">(From 19th Aug 2025 onwards)</p>
+                    <h3 className="plan-price">₹199</h3>
+                    <p className="plan-original">(From 19th Aug 2025 onwards)</p>
                   </div>
                 </div>
+
 
                 <div className="plan-features">
                   <div className="plan-feature">
