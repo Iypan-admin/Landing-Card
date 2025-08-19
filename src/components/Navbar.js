@@ -130,16 +130,16 @@ function Navbar({ showHeroTextInNav }) {
             <Link to="/" className="nav-link" onClick={handleNavClick}>Home</Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-link" onClick={handleNavClick}>About Us</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/centres" className="nav-link" onClick={handleNavClick}>Our Centres</Link>
+            <Link to="/courses" className="nav-link" onClick={handleNavClick}>Course Details</Link>
           </li>
           <li className="nav-item">
             <Link to="/elite-card" className="nav-link" onClick={handleNavClick}>Elite Membership</Link>
           </li>
           <li className="nav-item">
-            <Link to="/courses" className="nav-link" onClick={handleNavClick}>Course Details</Link>
+            <Link to="/centres" className="nav-link" onClick={handleNavClick}>Our Centres</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about" className="nav-link" onClick={handleNavClick}>About Us</Link>
           </li>
           <li className="nav-item dropdown" ref={dropdownRef}>
             <a
@@ -194,20 +194,21 @@ function Navbar({ showHeroTextInNav }) {
               <Link to="/" className="nav-link" onClick={handleNavClick}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-link" onClick={handleNavClick}>About Us</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/centres" className="nav-link" onClick={handleNavClick}>Our Centres</Link>
+              <Link to="/courses" className="nav-link" onClick={handleNavClick}>Course Details</Link>
             </li>
             <li className="nav-item">
               <Link to="/elite-card" className="nav-link" onClick={handleNavClick}>Elite Membership</Link>
             </li>
             <li className="nav-item">
-              <Link to="/franchise" className="nav-link" onClick={handleNavClick}>Franchise</Link>
+              <Link to="/centres" className="nav-link" onClick={handleNavClick}>Our Centres</Link>
             </li>
             <li className="nav-item">
-              <Link to="/courses" className="nav-link" onClick={handleNavClick}>Course Details</Link>
+              <Link to="/about" className="nav-link" onClick={handleNavClick}>About Us</Link>
             </li>
+            <li className="nav-item">
+              <Link to="/franchise" className="nav-link" onClick={handleNavClick}>Franchise</Link>
+            </li>
+
             <li className="nav-item">
               <button
                 className="nav-link languages-toggle"

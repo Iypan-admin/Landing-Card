@@ -16,9 +16,10 @@ import instagramIcon from './assets/instagram.svg';
 import linkedinIcon from './assets/linkedin.svg';
 import twitterIcon from './assets/twitter.svg';
 import youtubeIcon from './assets/youtube.svg';
-import LanguagePhysicsCanvas from './components/LanguagePhysicsCanvas';
+// import LanguagePhysicsCanvas from './components/LanguagePhysicsCanvas';
 import EliteCard from './components/EliteCard';
-import { FaPhone } from 'react-icons/fa';
+// import { FaPhone } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 
 // ScrollToTop component to handle automatic scrolling
 function ScrollToTop() {
@@ -147,12 +148,13 @@ function AppContent() {
         <div className="isml-footer-copyright">&copy; 2025 IYPAN Educational Centre Private Limited- All Rights Reserved.</div>
       </footer>
       <button
-        className="phone-call-btn"
-        onClick={() => window.location.href = 'tel:+917338881781'}
-        aria-label="Call us"
+        className="whatsapp-btn"
+        onClick={() => window.open('https://wa.me/917338881781', '_blank')}
+        aria-label="Chat on WhatsApp"
       >
-        <FaPhone />
+        <FaWhatsapp />
       </button>
+
     </div>
   );
 }

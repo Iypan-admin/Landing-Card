@@ -93,10 +93,10 @@ function LanguagePhysicsCanvas() {
     // Create walls with adjusted thickness for mobile
     const wallThickness = window.innerWidth <= 768 ? 40 : WALL_THICKNESS;
     const walls = [
-      Bodies.rectangle(width/2, -wallThickness/2, width, wallThickness, { isStatic: true }), // top
-      Bodies.rectangle(width/2, height + wallThickness/2, width, wallThickness, { isStatic: true }), // bottom
-      Bodies.rectangle(-wallThickness/2, height/2, wallThickness, height, { isStatic: true }), // left
-      Bodies.rectangle(width + wallThickness/2, height/2, wallThickness, height, { isStatic: true }) // right
+      Bodies.rectangle(width / 2, -wallThickness / 2, width, wallThickness, { isStatic: true }), // top
+      Bodies.rectangle(width / 2, height + wallThickness / 2, width, wallThickness, { isStatic: true }), // bottom
+      Bodies.rectangle(-wallThickness / 2, height / 2, wallThickness, height, { isStatic: true }), // left
+      Bodies.rectangle(width + wallThickness / 2, height / 2, wallThickness, height, { isStatic: true }) // right
     ];
     World.add(engine.world, walls);
 
@@ -111,8 +111,8 @@ function LanguagePhysicsCanvas() {
 
     greetings.forEach((greeting, i) => {
       for (let j = 0; j < currentTileCount; j++) {
-        const x = Math.random() * (width - boxWidth) + boxWidth/2;
-        const y = Math.random() * (height - boxHeight) + boxHeight/2;
+        const x = Math.random() * (width - boxWidth) + boxWidth / 2;
+        const y = Math.random() * (height - boxHeight) + boxHeight / 2;
         const box = Bodies.rectangle(x, y, boxWidth, boxHeight, {
           restitution: 0.6,
           friction: 0.1,
@@ -175,28 +175,28 @@ function LanguagePhysicsCanvas() {
     function renderLoop() {
       Matter.Engine.update(engine, 1000 / 60);
       ctx.clearRect(0, 0, width, height);
-      
+
       boxes.forEach(box => {
         const { greeting } = box;
         ctx.save();
         ctx.translate(box.position.x, box.position.y);
         ctx.rotate(box.angle);
-        
+
         // Draw box background
         ctx.fillStyle = greeting.color;
-        ctx.fillRect(-boxWidth/2, -boxHeight/2, boxWidth, boxHeight);
-        
+        ctx.fillRect(-boxWidth / 2, -boxHeight / 2, boxWidth, boxHeight);
+
         // Draw text
         ctx.fillStyle = '#fff';
         ctx.font = 'bold 1.2rem Arial';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillText(greeting.text, 0, -5);
-        
+
         // Draw language name
         ctx.font = '0.8rem Arial';
         ctx.fillText(greeting.language, 0, 15);
-        
+
         ctx.restore();
       });
       frameId = requestAnimationFrame(renderLoop);
@@ -217,16 +217,16 @@ function LanguagePhysicsCanvas() {
     <div ref={containerRef} style={{ width: '100%', maxWidth: 1100, margin: '0 auto', padding: '2rem 1rem', background: '#FFFFFF', borderRadius: 8, boxShadow: '0 2px 4px rgba(0,0,0,0.08)' }}>
       <h2 className={`languages-title animate-title${showHeading ? ' show' : ''}`} style={{ textAlign: 'center', color: '#1A237E', marginBottom: '1.5rem', fontSize: '2rem' }}>Play With Languages</h2>
       <div style={{ width: '100%' }}>
-        <canvas 
-          ref={canvasRef} 
-          style={{ 
-            width: '100%', 
-            height: canvasSize.height, 
-            background: '#FFFFFF', 
-            borderRadius: 8, 
+        <canvas
+          ref={canvasRef}
+          style={{
+            width: '100%',
+            height: canvasSize.height,
+            background: '#FFFFFF',
+            borderRadius: 8,
             display: 'block',
             touchAction: 'none'
-          }} 
+          }}
         />
       </div>
     </div>

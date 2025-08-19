@@ -15,7 +15,7 @@
 .quote-text {
   font-size: 1.5rem;
   color: #1a237e;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   flex: 1;
 }
@@ -23,7 +23,7 @@
 .isml-program-btn {
   background: linear-gradient(90deg, #49e4e3 0%, #1a237e 100%);
   color: #fff;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
   border: none;
@@ -31,12 +31,189 @@
   padding: 1rem 2.5rem;
   cursor: pointer;
   transition: background 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.10);
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.1);
 }
 
 .isml-program-btn:hover {
   background: linear-gradient(90deg, #1a237e 0%, #49e4e3 100%);
   box-shadow: 0 4px 16px rgba(74, 144, 226, 0.18);
+}
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: linear-gradient(145deg, #ffffff, #f8faff);
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: scaleIn 0.3s ease;
+}
+
+.modal-content h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #004aad;
+}
+
+.demo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.demo-form input,
+.demo-form select {
+  padding: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.demo-form input:focus,
+.demo-form select:focus {
+  border-color: #004aad;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 74, 173, 0.3);
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #004aad, #1a237e);
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #1a237e, #004aad);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+  margin-top: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Loader Circle */
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #4caf50;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Success Tick */
+.checkmark {
+  display: inline-block;
+  color: #4caf50;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: pop 0.3s ease forwards;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+.fullscreen-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+.spinner {
+  border: 5px solid #eee;
+  border-top: 5px solid #4caf50;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+.checkmark {
+  font-size: 3rem;
+  color: green;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 700px) {
@@ -54,4 +231,4 @@
     padding: 0.8rem 0;
     font-size: 1rem;
   }
-} 
+}
