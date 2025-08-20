@@ -16,6 +16,7 @@ function Home({ heroRef, heroOutOfView }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    contact: "",
     language: "",
     timeslot: ""
   });
@@ -34,7 +35,7 @@ function Home({ heroRef, heroOutOfView }) {
     setLoading(true);
     setSuccess(false);
 
-    const url = `https://script.google.com/macros/s/AKfycbwmfgqZ0fN_XzyW7g4JLPNlnXi4qJXh000I968ma_70D9tmixd8lX1mFwGZFlJEmxo/exec?name=${encodeURIComponent(formData.name)}&email=${encodeURIComponent(formData.email)}&language=${encodeURIComponent(formData.language)}&timeslot=${encodeURIComponent(formData.timeslot)}`;
+    const url = `https://script.google.com/macros/s/AKfycbwqHwpYvlRAiND1R9NJ1gSq0ESioc2VkQaeJoajrkAsGpcVUL_RHJjDGhQL4jFm1k0H/exec?name=${encodeURIComponent(formData.name)}&email=${encodeURIComponent(formData.email)}&contact=${encodeURIComponent(formData.contact)}&language=${encodeURIComponent(formData.language)}&timeslot=${encodeURIComponent(formData.timeslot)}`;
 
     try {
       const response = await fetch(url);
@@ -43,7 +44,7 @@ function Home({ heroRef, heroOutOfView }) {
       if (result.result === "success") {
         setTimeout(() => {
           setSuccess(true);
-          setFormData({ name: "", email: "", language: "", timeslot: "" });
+          setFormData({ name: "", email: "", contact: "", language: "", timeslot: "" });
           setLoading(false);
         }, 2000);
       } else {
@@ -103,6 +104,15 @@ function Home({ heroRef, heroOutOfView }) {
               onChange={handleChange}
               required
             />
+            <input
+              type="tel"
+              name="contact"
+              placeholder="Your Contact"
+              value={formData.contact}
+              onChange={handleChange}
+              required
+            />
+
             <select
               name="language"
               value={formData.language}

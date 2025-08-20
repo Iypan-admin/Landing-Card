@@ -16,10 +16,9 @@ import instagramIcon from './assets/instagram.svg';
 import linkedinIcon from './assets/linkedin.svg';
 import twitterIcon from './assets/twitter.svg';
 import youtubeIcon from './assets/youtube.svg';
-// import LanguagePhysicsCanvas from './components/LanguagePhysicsCanvas';
 import EliteCard from './components/EliteCard';
-// import { FaPhone } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
+import ReactPixel from 'react-facebook-pixel';
 
 // ScrollToTop component to handle automatic scrolling
 function ScrollToTop() {
@@ -37,6 +36,16 @@ function AppContent() {
   const [heroOutOfView, setHeroOutOfView] = useState(false);
   const location = useLocation();
   const observerRef = useRef(null);
+
+  // ✅ Meta Pixel init (once)
+  useEffect(() => {
+    ReactPixel.init("1643871382973259"); // 
+  }, []);
+
+  // ✅ Track PageView on every route change
+  useEffect(() => {
+    ReactPixel.pageView();
+  }, [location]);
 
   useEffect(() => {
     // Reset state when navigating to home page
@@ -126,7 +135,6 @@ function AppContent() {
                 <a href="about">About Us</a>
                 <a href="centres">Our Centres</a>
                 <a href="elite-card">Elite Membership</a>
-
               </div>
               <div className="vertical-line vertical-line-1"></div>
               <div className="footer-links-column">
@@ -154,7 +162,6 @@ function AppContent() {
       >
         <FaWhatsapp />
       </button>
-
     </div>
   );
 }
