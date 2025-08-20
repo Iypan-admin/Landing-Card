@@ -73,7 +73,7 @@ function Home({ heroRef, heroOutOfView }) {
           className="isml-program-btn"
           onClick={() => { setIsOpen(true); setSuccess(false); }}
         >
-          Book Your Demo
+          Book Your Class
         </button>
       </div>
 

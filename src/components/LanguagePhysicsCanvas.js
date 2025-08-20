@@ -35,7 +35,7 @@ function LanguagePhysicsCanvas() {
         padding: "2rem 1rem",
       }}
     >
-      <h2 className="faq-title">Our Testimonials</h2>
+      <h2 className="faq-title">Feedback From Our Students</h2>
       <Swiper
         modules={[Autoplay]}
         spaceBetween={30}
