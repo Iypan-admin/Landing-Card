@@ -674,7 +674,7 @@ function EliteCard() {
 
               <FAQItem
                 question="Can I upgrade my pass later?"
-                answer="Yes. You can upgrade within 30 days of purchase by paying the price difference (plus ₹10 processing). Downgrades are not allowed. To upgrade kindly contact : +91 9385457322 (or) Email: elitemembership.isml@gmail.com. Upgraded Pass will be send to your email in 2 working days."
+                answer="Yes. You can upgrade within 30 days of purchase by paying the price difference (plus ₹10 processing). Downgrades are not allowed. To upgrade kindly contact : +91 9385457322 (or) Email : elitemembership.isml@gmail.com. Upgraded Pass will be send to your email in 2 working days."
               />
 
               <FAQItem
