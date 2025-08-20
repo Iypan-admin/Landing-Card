@@ -646,21 +646,21 @@ function EliteCard() {
             <div className="faq-items">
               <FAQItem
                 question="What is the ISML Elite Membership?"
-                answer="The ISML Elite Card is a digital membership program that gives learners exclusive discounts, academic perks, and early access to premium courses and services offered by ISML."
+                answer="The ISML Elite Pass is a digital membership program that gives learners exclusive discounts, academic perks, and early access to premium courses and services offered by ISML."
               />
 
               <FAQItem
-                question="How do I get my ISML Elite Card?"
-                answer="Once you register and complete the payment, you'll receive your digital membership card via email within 2 working days."
+                question="How do I get my ISML Elite Pass?"
+                answer="Once you register and complete the payment, you'll receive your digital membership Pass via email within 2 working days."
               />
 
               <FAQItem
-                question="Is the card physical or digital?"
-                answer="It is a digital-only card. You'll receive a PDF or image version to your email for use during enrollments."
+                question="Is the pass physical or digital?"
+                answer="It is a digital-only pass. You'll receive a PDF or image version to your email for use during enrollments."
               />
 
               <FAQItem
-                question="Can I use the card for any language course?"
+                question="Can I use the pass for any language course?"
                 answer={
                   <>Yes! Based on your card type:
                     <ul>
@@ -673,24 +673,24 @@ function EliteCard() {
               />
 
               <FAQItem
-                question="Can I upgrade my card later?"
-                answer="Yes. You can upgrade within 30 days of purchase by paying the price difference (plus ₹10 processing). Downgrades are not allowed."
+                question="Can I upgrade my pass later?"
+                answer="Yes. You can upgrade within 30 days of purchase by paying the price difference (plus ₹10 processing). Downgrades are not allowed. To upgrade kindly contact : +91 9385457322 (or) Email: elitemembership.isml@gmail.com. Upgraded Pass will be send to your email in 2 working days."
               />
 
               <FAQItem
                 question="Is the membership refundable?"
                 answer={
-                  <>No. ISML Elite cards are non-refundable unless:
+                  <>No. ISML Elite Pass are non-refundable unless:
                     <ul>
                       <li>There was a technical issue during processing</li>
-                      <li>You accidentally paid twice for the same card</li>
+                      <li>You accidentally paid twice for the same pass</li>
                     </ul>
                   </>
                 }
               />
 
               <FAQItem
-                question="Can I use the card for more than one course?"
+                question="Can I use the pass for more than one course?"
                 answer="Yes! You can use it for multiple eligible courses within your validity period."
               />
 
@@ -713,18 +713,18 @@ function EliteCard() {
               />
 
               <FAQItem
-                question="What happens if I misuse the card or share it?"
+                question="What happens if I misuse the pass or share it?"
                 answer="Misuse (like sharing with others or fake referrals) will lead to termination without refund."
               />
 
               <FAQItem
-                question="What if I lose access to my card?"
+                question="What if I lose access to my pass?"
                 answer="You can request a free reissue by emailing us from your registered email ID. Limited to one reissue per year."
               />
 
               <FAQItem
                 question="Can I transfer the membership to someone else?"
-                answer="No. Cards are non-transferable and tied to the registered learner's name."
+                answer="No. Passes are non-transferable and tied to the registered learner's name."
               />
 
               <FAQItem
@@ -740,25 +740,25 @@ function EliteCard() {
               />
 
               <FAQItem
-                question="Does the card guarantee admission to ISML courses?"
-                answer="No. While the card offers discounts and perks, admission still depends on course availability and eligibility."
+                question="Does the pass guarantee admission to ISML courses?"
+                answer="No. While the pass offers discounts and perks, admission still depends on course availability and eligibility."
               />
 
               <FAQItem
-                question="Where can I use the card benefits?"
+                question="Where can I use the pass benefits?"
                 answer="Only on official ISML platforms, directly through the institute. Benefits are not applicable through agents or external websites."
               />
               <FAQItem
                 question="I'm a parent—can I manage my child's membership?"
-                answer="Yes, the card must be in the learner's name, but all communication and support can be directed to the parent/guardian (especially for minors)."
+                answer="Yes, the pass must be in the learner's name, but all communication and support can be directed to the parent/guardian (especially for minors)."
               />
               <FAQItem
                 question="What's the benefit for school/college students preparing for placements or abroad?"
                 answer="ISML Elite offers discounts on diploma courses and free access to study abroad guidance (ScholarPass and InfinityPass only), helping students prepare affordably and confidently."
               />
               <FAQItem
-                question="When can I use card benefits?"
-                answer="Card benefits, including discounts, are only applicable at the start of a new batch or course. They cannot be used for ongoing batches or courses."
+                question="When can I use pass benefits?"
+                answer="Pass benefits, including discounts, are only applicable at the start of a new batch or course. They cannot be used for ongoing batches or courses."
               />
               <FAQItem
                 question="What is the batch size for each program?"
