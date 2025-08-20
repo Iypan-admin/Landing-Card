@@ -505,7 +505,6 @@ footer {
   border: none;
   outline: none;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(73, 228, 227, 0.18);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -513,12 +512,26 @@ footer {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  animation: blink 1.2s infinite; /* 👈 default blink */
 }
 
+/* Hover ku scale + color change mattum */
 .whatsapp-btn:hover {
   transform: scale(1.08) translateY(-2px);
-  box-shadow: 0 8px 24px rgba(73, 228, 227, 0.22);
   background: #1a237e;
+}
+
+/* blink / pulse effect */
+@keyframes blink {
+  0% {
+    box-shadow: 0 0 5px #49e4e3, 0 0 10px #49e4e3, 0 0 20px #49e4e3;
+  }
+  50% {
+    box-shadow: 0 0 15px #49e4e3, 0 0 30px #49e4e3, 0 0 45px #49e4e3;
+  }
+  100% {
+    box-shadow: 0 0 5px #49e4e3, 0 0 10px #49e4e3, 0 0 20px #49e4e3;
+  }
 }
 
 .whatsapp-btn svg {
