@@ -17,13 +17,13 @@ import Img7 from "../assets/img7.jpg";
 
 function LanguagePhysicsCanvas() {
   const slides = [
-    { img: Img1, name: "Swetha Venkat - French Student" },
-    { img: Img2, name: "Anugayathiri - German Student" },
-    { img: Img3, name: "Cris Joy - German Student" },
-    { img: Img4, name: "Sumitha Magesh - French Student" },
-    { img: Img5, name: "Chitransha Tanwar - French Student" },
-    { img: Img6, name: "Nithish Raghavendar T K - Japanese Student" },
-    { img: Img7, name: "Revanth Raj S - Japanese Student" },
+    { img: Img1, name: "Swetha Venkat - French" },
+    { img: Img2, name: "Anugayathiri - German" },
+    { img: Img3, name: "Cris Joy - German" },
+    { img: Img4, name: "Sumitha Magesh - French" },
+    { img: Img5, name: "Chitransha Tanwar - French" },
+    { img: Img6, name: "Nithish Raghavendar T K - Japanese" },
+    { img: Img7, name: "Revanth Raj S - Japanese" },
   ];
 
   return (
@@ -35,7 +35,7 @@ function LanguagePhysicsCanvas() {
         padding: "2rem 1rem",
       }}
     >
-      <h2 className="faq-title">Feedback From Our Students</h2>
+      <h2 className="faq-title">The ISML Journey, Through Our Learners</h2>
       <Swiper
         modules={[Autoplay]}
         spaceBetween={30}
