@@ -39,7 +39,7 @@ function AppContent() {
 
   // ✅ Meta Pixel init (once)
   useEffect(() => {
-    ReactPixel.init("1643871382973259"); // 
+    ReactPixel.init("573013778392476"); // 
   }, []);
 
   // ✅ Track PageView on every route change
