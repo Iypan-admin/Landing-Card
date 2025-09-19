@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './EliteCard.css';
 import rs2 from '../assets/1999.png';
-import rs3 from '../assets/rs99.png';
-import rs4 from '../assets/49.png';
-
+// import rs3 from '../assets/rs99.png';
+// import rs4 from '../assets/49.png';
+import rs5 from '../assets/Rs9991.png';
+import rs6 from '../assets/rs499.png';
 function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -105,11 +106,11 @@ function EliteCard() {
               <div className="plan-content">
                 <div className="plan-header">
                   <h2 className="plans-name">ISML Elite EduPass</h2>
-                  <img src={rs4}></img>
-                  <p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p>
+                  <img src={rs2}></img>
+                  {/* <p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p> */}
                   <div className="plan-details">
-                    <h3 className="plan-price">₹199</h3>
-                    <p className="plan-original">(From 19th Aug 2025 onwards)</p>
+                    <h3 className="plan-price">₹49</h3>
+                    <p className="plan-original">(Festive Launch Offer)</p>
                   </div>
                 </div>
 
@@ -167,9 +168,11 @@ function EliteCard() {
               <div className="plan-content">
                 <div className="plan-header">
                   <h4 className="plan-name">ISML Elite ScholarPass</h4>
-                  <img src={rs3}></img><p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p>
+                  <img src={rs6}></img>
+                  {/* <p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p> */}
                   <div className="plan-details">
-                    <h3 className="plan-price">₹499</h3><p className="plan-original">(From 19th Aug 2025 onwards)</p>
+                    <h3 className="plan-price">₹299</h3>
+                    <p className="plan-original">(Festive Launch Offer)</p>
                   </div>
                 </div>
 
@@ -226,10 +229,11 @@ function EliteCard() {
               <div className="plan-content">
                 <div className="plan-header">
                   <h4 className="plan-name">ISML Elite InfinityPass</h4>
-                  <img src={rs2}></img><p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p>
+                  <img src={rs5}></img>
+                  {/* <p className="plan-original">(Limited Time Offer Till 18th Aug 2025)</p> */}
                   <div className="plan-details">
-                    <h3 className="plan-price">₹999</h3>
-                    <p className="plan-original">(From 19th Aug 2025 onwards)</p>
+                    <h3 className="plan-price">₹499</h3>
+                    <p className="plan-original">(Festive Launch Offer)</p>
                   </div>
                 </div>
 
