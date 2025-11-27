@@ -39,7 +39,7 @@ import intern4 from '../assets/Intern4.png';
 import con1 from '../assets/Consultants/consultant1.png';
 import con2 from '../assets/Consultants/consultant2.png';
 import t1 from '../assets/trainers/t1.png';
-import t2 from '../assets/trainers/t2.png';
+// import t2 from '../assets/trainers/t2.png';
 import t3 from '../assets/trainers/t3.png';
 import t4 from '../assets/trainers/t4.png';
 import t5 from '../assets/trainers/t5.png';
@@ -48,6 +48,9 @@ import t7 from '../assets/trainers/t7.png';
 import t8 from '../assets/trainers/t8.png';
 import t9 from '../assets/trainers/t9.png';
 import t10 from '../assets/trainers/t10.png';
+import t11 from "../assets/trainers/t11.png";
+import t12 from "../assets/trainers/t12.png";
+import t13 from "../assets/trainers/t13.png";
 
 import a1 from '../assets/admin/a1.png';
 import a2 from '../assets/admin/a2.png';
@@ -319,11 +322,12 @@ function AboutUs() {
               style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
             >
               {carouselImages.map((image, index) => (
-                <div
-                  key={index}
-                  className="carousel-slide"
-                >
-                  <img src={image} alt={`Carousel Image ${index + 1}`} className="carousel-image" />
+                <div key={index} className="carousel-slide">
+                  <img
+                    src={image}
+                    alt={`Carousel Image ${index + 1}`}
+                    className="carousel-image"
+                  />
                 </div>
               ))}
             </div>
@@ -331,7 +335,9 @@ function AboutUs() {
               {carouselImages.map((_, index) => (
                 <button
                   key={index}
-                  className={`carousel-indicator ${index === currentImageIndex ? 'active' : ''}`}
+                  className={`carousel-indicator ${
+                    index === currentImageIndex ? "active" : ""
+                  }`}
                   onClick={() => setCurrentImageIndex(index)}
                 />
               ))}
@@ -344,19 +350,25 @@ function AboutUs() {
           <div className="content-with-carousel">
             <div className="text-content">
               <p className="about-text">
-                Welcome to Indian School for Modern Languages - A registered trade mark of IYPAN Educational Centre PVT LTD,
-                Established in 2014 under the name of Ocean Institute for French, later changed to IYPAN has been a pioneer
-                in language education, enriching lives through quality language programs. Our journey is marked by a commitment
-                to excellence, innovation in curriculum, and empowering learners of all ages with linguistic proficiency,
+                Welcome to Indian School for Modern Languages - A registered
+                trade mark of IYPAN Educational Centre PVT LTD, Established in
+                2014 under the name of Ocean Institute for French, later changed
+                to IYPAN has been a pioneer in language education, enriching
+                lives through quality language programs. Our journey is marked
+                by a commitment to excellence, innovation in curriculum, and
+                empowering learners of all ages with linguistic proficiency,
                 cultural immersion, and global connectivity.
               </p>
             </div>
 
             <div className="text-content">
               <p className="about-text">
-                Since 2014, ISML has grown from teaching French to introducing German and Japanese in 2022. We've impacted
-                20,000+ students through language workshops across India, involving parents, teachers, and students. Notably,
-                200+ students have achieved excellence, showcasing our commitment to comprehensive language education.
+                Since 2014, ISML has grown from teaching French to introducing
+                German and Japanese in 2022. We've impacted 20,000+ students
+                through language workshops across India, involving parents,
+                teachers, and students. Notably, 200+ students have achieved
+                excellence, showcasing our commitment to comprehensive language
+                education.
               </p>
             </div>
           </div>
@@ -369,7 +381,9 @@ function AboutUs() {
           <div
             className="client-logos-grid"
             ref={logosRef}
-            style={{ transform: `translateX(-${currentPosition * (100 / 8)}%)` }}
+            style={{
+              transform: `translateX(-${currentPosition * (100 / 8)}%)`,
+            }}
           >
             {logos.map((logo, index) => (
               <div
@@ -395,16 +409,18 @@ function AboutUs() {
             <section className="about-section vision-section">
               <h2 className="section-title">Our Vision</h2>
               <p className="about-text">
-                We envision a society where language barriers are overcome, facilitating seamless communication and
-                interconnectedness among diverse communities.
+                We envision a society where language barriers are overcome,
+                facilitating seamless communication and interconnectedness among
+                diverse communities.
               </p>
             </section>
 
             <section className="about-section mission-section">
               <h2 className="section-title">Our Mission</h2>
               <p className="about-text">
-                Our mission is to empower individuals of all ages with the linguistic proficiency necessary to thrive
-                in a globalized world while fostering cross-cultural appreciation and understanding.
+                Our mission is to empower individuals of all ages with the
+                linguistic proficiency necessary to thrive in a globalized world
+                while fostering cross-cultural appreciation and understanding.
               </p>
             </section>
           </div>
@@ -419,29 +435,98 @@ function AboutUs() {
         <div id="trainer-team" className="team-subsection">
           <button
             className="team-subsection-header"
-            onClick={() => toggleTeamSection('trainer-team')}
+            onClick={() => toggleTeamSection("trainer-team")}
           >
             <h3 className="team-subsection-title">Trainer Team</h3>
-            <span className={`dropdown-arrow ${openTeamSection === 'trainer-team' ? 'up' : ''}`}>▼</span>
+            <span
+              className={`dropdown-arrow ${
+                openTeamSection === "trainer-team" ? "up" : ""
+              }`}
+            >
+              ▼
+            </span>
           </button>
-          <div className={`team-members-grid ${openTeamSection === 'trainer-team' ? 'open' : ''}`}>
+          <div
+            className={`team-members-grid ${
+              openTeamSection === "trainer-team" ? "open" : ""
+            }`}
+          >
             {[
               { name: "Pradeep kumar M", title: "Founder", image: a1 },
-              { name: "Popodoum Noe", title: "French Language Trainer", image: t1 },
-              { name: "Vyshnavi M", title: "French Language Trainer", image: t5 },
-              { name: "Revanth S", title: "Japanese Language Trainer", image: t2 },
-              { name: "Sujal Singh", title: "German Language Trainer", image: t3 },
-              { name: "Ilakkiyaa Ravichandran", title: "French Language Trainer", image: t4 },
-              { name: "Claude Niyonkuru", title: "French Language Trainer", image: t6 },
-              { name: "Kanchan pundir", title: "German Language Trainer", image: t7 },
-              { name: "Bhumika jain", title: "Japanese Language Trainer", image: t8 },
-              { name: "Himanshu Raj", title: "German Language Trainer", image: t9 },
-              { name: "Satyam", title: "Japanese Language Trainer", image: t10 }
+              {
+                name: "Popodoum Noe",
+                title: "French Language Trainer",
+                image: t1,
+              },
+              {
+                name: "Vyshnavi M",
+                title: "French Language Trainer",
+                image: t5,
+              },
+              // {
+              //   name: "Revanth S",
+              //   title: "Japanese Language Trainer",
+              //   image: t2,
+              // },
+              {
+                name: "Sujal Singh",
+                title: "German Language Trainer",
+                image: t3,
+              },
+              {
+                name: "Ilakkiyaa Ravichandran",
+                title: "French Language Trainer",
+                image: t4,
+              },
+              {
+                name: "Claude Niyonkuru",
+                title: "French Language Trainer",
+                image: t6,
+              },
+              {
+                name: "Kanchan pundir",
+                title: "German Language Trainer",
+                image: t7,
+              },
+              {
+                name: "Bhumika jain",
+                title: "Japanese Language Trainer",
+                image: t8,
+              },
+              {
+                name: "Neenumol Varghese",
+                title: "German Language Trainer",
+                image: t9,
+              },
+              {
+                name: "Adhithyan.M",
+                title: "German Language Trainer",
+                image: t10,
+              },
+              {
+                name: "Devansh",
+                title: "Japanese Language Trainer",
+                image: t11,
+              },
+              {
+                name: "Tanisha Kohli",
+                title: "German Language Trainer",
+                image: t12,
+              },
+              {
+                name: "Nitish",
+                title: "German Language Trainer",
+                image: t13,
+              },
             ].map((trainer, index) => (
               <div key={index} className="team-member-card">
                 <div className="team-card-bg"></div>
                 <div className="team-member-image-container">
-                  <img src={trainer.image} alt={`${trainer.name} - ${trainer.title}`} className="team-member-image" />
+                  <img
+                    src={trainer.image}
+                    alt={`${trainer.name} - ${trainer.title}`}
+                    className="team-member-image"
+                  />
                 </div>
                 <h4 className="team-member-name">{trainer.name}</h4>
                 <p className="team-member-title">{trainer.title}</p>
@@ -454,16 +539,30 @@ function AboutUs() {
         <div id="admin-team" className="team-subsection">
           <button
             className="team-subsection-header"
-            onClick={() => toggleTeamSection('admin-team')}
+            onClick={() => toggleTeamSection("admin-team")}
           >
             <h3 className="team-subsection-title">Admin Team</h3>
-            <span className={`dropdown-arrow ${openTeamSection === 'admin-team' ? 'up' : ''}`}>▼</span>
+            <span
+              className={`dropdown-arrow ${
+                openTeamSection === "admin-team" ? "up" : ""
+              }`}
+            >
+              ▼
+            </span>
           </button>
-          <div className={`team-members-grid ${openTeamSection === 'admin-team' ? 'open' : ''}`}>
+          <div
+            className={`team-members-grid ${
+              openTeamSection === "admin-team" ? "open" : ""
+            }`}
+          >
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={a2} alt="Nandhini R - Project Head" className="team-member-image" />
+                <img
+                  src={a2}
+                  alt="Nandhini R - Project Head"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Nandhini R</h4>
               <p className="team-member-title">Project Head</p>
@@ -471,7 +570,11 @@ function AboutUs() {
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={a3} alt="Arunjunai Rani R - HR Executive" className="team-member-image" />
+                <img
+                  src={a3}
+                  alt="Arunjunai Rani R - HR Executive"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Arunjunai Rani R</h4>
               <p className="team-member-title">HR Executive</p>
@@ -479,7 +582,11 @@ function AboutUs() {
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={a4} alt="Sarath Kumar D - Creative Head" className="team-member-image" />
+                <img
+                  src={a4}
+                  alt="Sarath Kumar D - Creative Head"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Sarath Kumar D</h4>
               <p className="team-member-title">Creative Head</p>
@@ -487,15 +594,25 @@ function AboutUs() {
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={a5} alt="Evanjalin Sheeba E - Intern Recurit & Scholarship Manager" className="team-member-image" />
+                <img
+                  src={a5}
+                  alt="Evanjalin Sheeba E - Intern Recurit & Scholarship Manager"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Evanjalin Sheeba E</h4>
-              <p className="team-member-title">Intern Recurit & Scholarship Manager</p>
+              <p className="team-member-title">
+                Intern Recurit & Scholarship Manager
+              </p>
             </div>
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={a6} alt="M Madhan Raj - HR Manager" className="team-member-image" />
+                <img
+                  src={a6}
+                  alt="M Madhan Raj - HR Manager"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">M Madhan Raj</h4>
               <p className="team-member-title">HR Manager</p>
@@ -507,16 +624,30 @@ function AboutUs() {
         <div id="consultants" className="team-subsection">
           <button
             className="team-subsection-header"
-            onClick={() => toggleTeamSection('consultants')}
+            onClick={() => toggleTeamSection("consultants")}
           >
             <h3 className="team-subsection-title">Consultants</h3>
-            <span className={`dropdown-arrow ${openTeamSection === 'consultants' ? 'up' : ''}`}>▼</span>
+            <span
+              className={`dropdown-arrow ${
+                openTeamSection === "consultants" ? "up" : ""
+              }`}
+            >
+              ▼
+            </span>
           </button>
-          <div className={`team-members-grid ${openTeamSection === 'consultants' ? 'open' : ''}`}>
+          <div
+            className={`team-members-grid ${
+              openTeamSection === "consultants" ? "open" : ""
+            }`}
+          >
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={con1} alt="Christina Caroline Sekar - Tutor/Senior Consultant Mathematics" className="team-member-image" />
+                <img
+                  src={con1}
+                  alt="Christina Caroline Sekar - Tutor/Senior Consultant Mathematics"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Christina Caroline Sekar</h4>
               <p className="team-member-title">Senior Consultant Mathematics</p>
@@ -524,7 +655,11 @@ function AboutUs() {
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={con2} alt="Gowtham Muthukumar G - Management consultant" className="team-member-image" />
+                <img
+                  src={con2}
+                  alt="Gowtham Muthukumar G - Management consultant"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Gowtham Muthukumar G</h4>
               <p className="team-member-title">Management Consultant</p>
@@ -536,17 +671,31 @@ function AboutUs() {
         <div id="interns" className="team-subsection">
           <button
             className="team-subsection-header"
-            onClick={() => toggleTeamSection('interns')}
+            onClick={() => toggleTeamSection("interns")}
           >
             <h3 className="team-subsection-title">Interns</h3>
-            <span className={`dropdown-arrow ${openTeamSection === 'interns' ? 'up' : ''}`}>▼</span>
+            <span
+              className={`dropdown-arrow ${
+                openTeamSection === "interns" ? "up" : ""
+              }`}
+            >
+              ▼
+            </span>
           </button>
-          <div className={`team-members-grid ${openTeamSection === 'interns' ? 'open' : ''}`}>
+          <div
+            className={`team-members-grid ${
+              openTeamSection === "interns" ? "open" : ""
+            }`}
+          >
             {/* Dummy Intern 1 */}
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={intern1} alt="Niranjan Galla" className="team-member-image" />
+                <img
+                  src={intern1}
+                  alt="Niranjan Galla"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Niranjan Galla</h4>
               <p className="team-member-title">Intern</p>
@@ -555,7 +704,11 @@ function AboutUs() {
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={intern2} alt="Sai Gopal Vallu" className="team-member-image" />
+                <img
+                  src={intern2}
+                  alt="Sai Gopal Vallu"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Sai Gopal Vallu</h4>
               <p className="team-member-title">Intern</p>
@@ -564,7 +717,11 @@ function AboutUs() {
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={intern3} alt="Mohammed Abdul Majeed" className="team-member-image" />
+                <img
+                  src={intern3}
+                  alt="Mohammed Abdul Majeed"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Mohammed Abdul Majeed</h4>
               <p className="team-member-title">Intern</p>
@@ -573,7 +730,11 @@ function AboutUs() {
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={intern4} alt="Sanjanya Srinivasan" className="team-member-image" />
+                <img
+                  src={intern4}
+                  alt="Sanjanya Srinivasan"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Sanjanya Srinivasan</h4>
               <p className="team-member-title">Intern</p>
@@ -584,17 +745,31 @@ function AboutUs() {
         <div id="durkkas-team" className="team-subsection">
           <button
             className="team-subsection-header"
-            onClick={() => toggleTeamSection('durkkas-team')}
+            onClick={() => toggleTeamSection("durkkas-team")}
           >
             <h3 className="team-subsection-title">Master Franchise Team</h3>
-            <span className={`dropdown-arrow ${openTeamSection === 'durkkas-team' ? 'up' : ''}`}>▼</span>
+            <span
+              className={`dropdown-arrow ${
+                openTeamSection === "durkkas-team" ? "up" : ""
+              }`}
+            >
+              ▼
+            </span>
           </button>
-          <div className={`team-members-grid ${openTeamSection === 'durkkas-team' ? 'open' : ''}`}>
+          <div
+            className={`team-members-grid ${
+              openTeamSection === "durkkas-team" ? "open" : ""
+            }`}
+          >
             {/* Member 1 */}
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={durkkas1} alt="Member 1 Name" className="team-member-image" />
+                <img
+                  src={durkkas1}
+                  alt="Member 1 Name"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Naveen Prasanth C</h4>
               <p className="team-member-title">Project Director</p>
@@ -603,7 +778,11 @@ function AboutUs() {
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={durkkas2} alt="Member 2 Name" className="team-member-image" />
+                <img
+                  src={durkkas2}
+                  alt="Member 2 Name"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Saravana Kumar P</h4>
               <p className="team-member-title">Executive Manager</p>
@@ -612,7 +791,11 @@ function AboutUs() {
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={durkkas3} alt="Member 3 Name" className="team-member-image" />
+                <img
+                  src={durkkas3}
+                  alt="Member 3 Name"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Rahmathullah S</h4>
               <p className="team-member-title">Digital Marketing Executive</p>
@@ -621,7 +804,11 @@ function AboutUs() {
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={durkkas4} alt="Member 4 Name" className="team-member-image" />
+                <img
+                  src={durkkas4}
+                  alt="Member 4 Name"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Manikandan V</h4>
               <p className="team-member-title">Technical Associate</p>
@@ -630,30 +817,32 @@ function AboutUs() {
             <div className="team-member-card">
               <div className="team-card-bg"></div>
               <div className="team-member-image-container">
-                <img src={durkkas5} alt="Member 5 Name" className="team-member-image" />
+                <img
+                  src={durkkas5}
+                  alt="Member 5 Name"
+                  className="team-member-image"
+                />
               </div>
               <h4 className="team-member-name">Bharathi Manoharan</h4>
               <p className="team-member-title">Technical Associate</p>
             </div>
           </div>
         </div>
-
-      </section >
+      </section>
 
       {/* Moved join-team-container here */}
-      < div className="join-team-container" >
+      <div className="join-team-container">
         <div className="join-team-content">
           <h2 className="join-team-title">Want to join our team?</h2>
           <button
             className="join-team-button"
-            onClick={() => window.location.href = 'tel:+917338880780'}
+            onClick={() => (window.location.href = "tel:+917338880780")}
           >
             Click here to join
           </button>
         </div>
-      </div >
-
-    </div >
+      </div>
+    </div>
   );
 }
 
