@@ -9,6 +9,9 @@ import CourseDetails from './components/CourseDetails';
 import Franchise from './components/Franchise';
 import ContactUs from './components/ContactUs';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsAndConditions from './components/TermsAndConditions';
+import ShippingPolicy from './components/ShippingPolicy';
+import RefundPolicy from './components/RefundPolicy';
 import French from './components/French';
 import German from './components/German';
 import Japanese from './components/Japanese';
@@ -103,6 +106,9 @@ function AppContent() {
           <Route path="/franchise" element={<Franchise />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
+          <Route path="/shipping" element={<ShippingPolicy />} />
+          <Route path="/refund" element={<RefundPolicy />} />
           <Route path="/french" element={<French />} />
           <Route path="/german" element={<German />} />
           <Route path="/japanese" element={<Japanese />} />

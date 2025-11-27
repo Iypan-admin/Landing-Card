@@ -11,6 +11,7 @@ function Navbar({ showHeroTextInNav }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLanguagesOpen, setIsLanguagesOpen] = useState(false);
+  const [isPoliciesOpen, setIsPoliciesOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const dropdownRef = useRef(null);
@@ -77,6 +78,7 @@ function Navbar({ showHeroTextInNav }) {
     setIsDropdownOpen(false); // This is still needed for desktop
     setIsMobileMenuOpen(false); // Explicitly close mobile menu
     setIsLanguagesOpen(false); // Also close languages dropdown
+    setIsPoliciesOpen(false); // Also close policies dropdown
   };
 
   // Toggle mobile menu visibility (opens the menu)
@@ -90,12 +92,19 @@ function Navbar({ showHeroTextInNav }) {
     // e.stopPropagation(); // Stopping propagation here might interfere with overlay click
     setIsMobileMenuOpen(false);
     setIsLanguagesOpen(false); // Close languages dropdown
+    setIsPoliciesOpen(false); // Close policies dropdown
   };
 
   // Toggle Languages section
   const handleLanguagesToggle = (e) => {
     e.preventDefault();
     setIsLanguagesOpen(!isLanguagesOpen);
+  };
+
+  // Toggle Policies section
+  const handlePoliciesToggle = (e) => {
+    e.preventDefault();
+    setIsPoliciesOpen(!isPoliciesOpen);
   };
 
   return (
@@ -162,9 +171,17 @@ function Navbar({ showHeroTextInNav }) {
                     <li><Link to="/japanese" onClick={handleNavClick}>Japanese</Link></li>
                   </ul>
                 </li>
+                <li className="dropdown-submenu">
+                  <a href="#policies">Policies</a>
+                  <ul className="dropdown-submenu-content">
+                    <li><Link to="/privacy" onClick={handleNavClick}>Privacy Policy</Link></li>
+                    <li><Link to="/terms" onClick={handleNavClick}>Terms & Conditions</Link></li>
+                    <li><Link to="/shipping" onClick={handleNavClick}>Shipping Policy</Link></li>
+                    <li><Link to="/refund" onClick={handleNavClick}>Refund & Cancellation Policy</Link></li>
+                  </ul>
+                </li>
                 <li><Link to="/franchise" onClick={handleNavClick}>Franchise</Link></li>
                 <li><Link to="/contact" onClick={handleNavClick}>Contact Us</Link></li>
-                <li><Link to="/privacy" onClick={handleNavClick}>Privacy Policy</Link></li>
               </ul>
             )}
           </li>
@@ -223,10 +240,21 @@ function Navbar({ showHeroTextInNav }) {
               </div>
             </li>
             <li className="nav-item">
-              <Link to="/contact" className="nav-link" onClick={handleNavClick}>Contact Us</Link>
+              <button
+                className="nav-link languages-toggle"
+                onClick={handlePoliciesToggle}
+              >
+                Policies <span className={`arrow ${isPoliciesOpen ? 'up' : 'down'}`}>▼</span>
+              </button>
+              <div className={`languages-dropdown ${isPoliciesOpen ? 'open' : ''}`}>
+                <Link to="/privacy" className="nav-link" onClick={handleNavClick}>Privacy Policy</Link>
+                <Link to="/terms" className="nav-link" onClick={handleNavClick}>Terms & Conditions</Link>
+                <Link to="/shipping" className="nav-link" onClick={handleNavClick}>Shipping Policy</Link>
+                <Link to="/refund" className="nav-link" onClick={handleNavClick}>Refund & Cancellation Policy</Link>
+              </div>
             </li>
             <li className="nav-item">
-              <Link to="/privacy" className="nav-link" onClick={handleNavClick}>Privacy Policy</Link>
+              <Link to="/contact" className="nav-link" onClick={handleNavClick}>Contact Us</Link>
             </li>
           </div>
         </ul>
