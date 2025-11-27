@@ -45,7 +45,7 @@ function TermsAndConditions() {
 
           <h2 id="official-platforms">2. Official Platforms Covered Under These Terms</h2>
           <ul>
-            <li>Website: <a href="https://www.indianschoolformodernlanguages.com/" target="_blank" rel="noopener noreferrer">www.indianschoolformodernlanguages.com</a></li>
+            <li>Website: <a href="https://www.indianschoolformodernlanguages.com/" target="_blank" rel="noopener noreferrer">indianschoolformodernlanguages.com</a></li>
             <li>Student Portal: <a href="https://studentportal.iypan.com/" target="_blank" rel="noopener noreferrer">studentportal.iypan.com</a></li>
             <li>Admin Portal: <a href="https://admin.iypan.com/" target="_blank" rel="noopener noreferrer">admin.iypan.com</a></li>
           </ul>
