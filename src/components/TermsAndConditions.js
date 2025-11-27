@@ -45,9 +45,9 @@ function TermsAndConditions() {
 
           <h2 id="official-platforms">2. Official Platforms Covered Under These Terms</h2>
           <ul>
-            <li>Website: <a href="https://www.indianschoolformodernlanguages.com/" target="_blank" rel="noopener noreferrer">https://www.indianschoolformodernlanguages.com/</a></li>
-            <li>Student Portal: <a href="https://studentportal.iypan.com/" target="_blank" rel="noopener noreferrer">https://studentportal.iypan.com/</a></li>
-            <li>Admin Portal: <a href="https://admin.iypan.com/" target="_blank" rel="noopener noreferrer">https://admin.iypan.com/</a></li>
+            <li>Website: <a href="https://www.indianschoolformodernlanguages.com/" target="_blank" rel="noopener noreferrer">www.indianschoolformodernlanguages.com</a></li>
+            <li>Student Portal: <a href="https://studentportal.iypan.com/" target="_blank" rel="noopener noreferrer">studentportal.iypan.com</a></li>
+            <li>Admin Portal: <a href="https://admin.iypan.com/" target="_blank" rel="noopener noreferrer">admin.iypan.com</a></li>
           </ul>
           <p>These Terms apply to all websites, internal systems, CRM, LMS and third-party tools used by ISML.</p>
 
@@ -112,8 +112,8 @@ function TermsAndConditions() {
 
           <h2 id="portal-usage">10. Portal Usage Rules</h2>
           <ul>
-            <li>Student Portal: <a href="https://studentportal.iypan.com/" target="_blank" rel="noopener noreferrer">https://studentportal.iypan.com/</a></li>
-            <li>Admin Portal: <a href="https://admin.iypan.com/" target="_blank" rel="noopener noreferrer">https://admin.iypan.com/</a></li>
+            <li>Student Portal: <a href="https://studentportal.iypan.com/" target="_blank" rel="noopener noreferrer">studentportal.iypan.com</a></li>
+            <li>Admin Portal: <a href="https://admin.iypan.com/" target="_blank" rel="noopener noreferrer">admin.iypan.com</a></li>
           </ul>
           <p>Users agree to:</p>
           <ul>
@@ -164,9 +164,9 @@ function TermsAndConditions() {
             Choolaimedu, Chennai - 600094<br/>
             📩 Email: <a href="mailto:enquiry.isml@gmail.com">enquiry.isml@gmail.com</a><br/>
             📞 Phone: <a href="tel:+917338881781">+91 - 73388 81781</a><br/>
-            🌐 Website: <a href="https://www.indianschoolformodernlanguages.com/" target="_blank" rel="noopener noreferrer">https://www.indianschoolformodernlanguages.com/</a><br/>
-            🎓 Student Portal: <a href="https://studentportal.iypan.com/" target="_blank" rel="noopener noreferrer">https://studentportal.iypan.com/</a><br/>
-            🛠 Admin Portal: <a href="https://admin.iypan.com/" target="_blank" rel="noopener noreferrer">https://admin.iypan.com/</a>
+            🌐 Website: <a href="https://www.indianschoolformodernlanguages.com/" target="_blank" rel="noopener noreferrer">www.indianschoolformodernlanguages.com</a><br/>
+            🎓 Student Portal: <a href="https://studentportal.iypan.com/" target="_blank" rel="noopener noreferrer">studentportal.iypan.com</a><br/>
+            🛠 Admin Portal: <a href="https://admin.iypan.com/" target="_blank" rel="noopener noreferrer">admin.iypan.com</a>
           </p>
         </div>
       </div>
