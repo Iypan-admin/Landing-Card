@@ -51,6 +51,7 @@ import t10 from '../assets/trainers/t10.png';
 import t11 from "../assets/trainers/t11.png";
 import t12 from "../assets/trainers/t12.png";
 import t13 from "../assets/trainers/t13.png";
+import t14 from "../assets/trainers/t14.png";
 
 import a1 from '../assets/admin/a1.png';
 import a2 from '../assets/admin/a2.png';
@@ -517,6 +518,11 @@ function AboutUs() {
                 name: "Nitish",
                 title: "German Language Trainer",
                 image: t13,
+              },
+              {
+                name: "Vikasini",
+                title: "Japanese Language Trainer",
+                image: t14,
               },
             ].map((trainer, index) => (
               <div key={index} className="team-member-card">
